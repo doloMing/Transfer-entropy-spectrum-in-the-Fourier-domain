@@ -1,16 +1,15 @@
 # Transfer-entropy-spectrum-in-the-Fourier-domain
-This is the algorithm for calculating the transfer entropy spectrum in the Fourier-domain, which is a novel generalization of transfer entropy. This is the algorithm implemented in our paper entitled **"Fourier-domain transfer entropy spectrum"**. 
+This is the algorithm for calculating the transfer entropy spectrum in the Fourier-domain, which is a novel generalization of transfer entropy. 
 
 **On 2021.10.11**, we will let the MATLAB implementation of our algorithm be open source. One can learn about this implementation according to our paper.
-You can find this version in the **Initial-MATLAB-version branch**.
+You can find this version in the **Initial-MATLAB-version branch**. This is the algorithm implemented in our paper entitled **"Fourier-domain transfer entropy spectrum"**. 
 
-**On 2021.10.17**, we will relase an optimized version of the MATLAB implementation. In this version, we will accelerate the computation by matrix organization
-in our codes. The code also supports a unified calculation of the Fourier-domain transfer entropy spectrum among multiple time series. This version is better suited 
-for engineering using. You can find this version in the **Optimized-MATLAB-version branch**. If one wants to learn about the theory underlying our algorithm, we suggest 
-that it will be much easier to read the code released on **2021.10.11**.
+**On 2021.10.17**, we will relase an engineering version of the MATLAB implementation. In this version, we will accelerate the computation by matrix organization and approximation in our codes. The code also supports a unified calculation of the Fourier-domain transfer entropy spectrum among multiple time series. This version is better suited for engineering using (e.g., video processing) rather than scientific using. It is not completely equivalent to the approach described in the paper **"Fourier-domain transfer entropy spectrum"**. You can find this version in the **Engineering-MATLAB-version branch**. 
 
-**On 2021.10.18**, we will release the Python version of our algorithm. You can find this version in the **Pyton-version branch**. This version is equivalent to the
-the version in the **Optimized-MATLAB-version branch**.
+**On 2021.10.18**, we will release the Python version of our algorithm. You can find this version in the **Initial-Pyton-version branch**. This version is equivalent to the
+the version in the **Initial-MATLAB-version branch** and designed for Python users. This is the algorithm implemented in our paper entitled **"Fourier-domain transfer entropy spectrum"**. Please note that it is not completely equivalent to the **Engineering-MATLAB-version branch**.
+
+**On 2021.10.25**, we will relase an engineering version of the Python implementation. This version is equivalent to the **Engineering-MATLAB-version branch** and better suited for engineering using (e.g., video processing) rather than scientific using. It is not completely equivalent to the approach described in the paper **"Fourier-domain transfer entropy spectrum"**. You can find this version in the **Engineering-Python-version branch**. 
 
 Below, we introduce the details of the **Initial-MATLAB-version branch**. Among these files, "MainFunctionforFDTES.m" 
 is the main function to run. "SymbolizationFunction.m", "SearchHistory.m", "FourierDomainTransferEntropySpectrum.m", "SignificanceTestFunction.m" 
