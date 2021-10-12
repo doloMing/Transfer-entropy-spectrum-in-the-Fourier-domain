@@ -1,14 +1,24 @@
 # Transfer-entropy-spectrum-in-the-Fourier-domain
-This is the algorithm for calculating the transfer entropy spectrum in the Fourier-domain, which is a novel generalization of transfer entropy. 
-On 2021.10.11, we will let the MATLAB implementation of our algorithm be open source. On 2021.10.18, we will release the Python version of our algorithm.
+This is the algorithm for calculating the transfer entropy spectrum in the Fourier-domain, which is a novel generalization of transfer entropy. This is the algorithm implemented in our paper entitled **"Fourier-domain transfer entropy spectrum"**. 
 
-This is the algorithm implemented in our paper entitled "Fourier-domain transfer entropy spectrum". Among these files, "MainFunctionforFDTES.m" 
+**On 2021.10.11**, we will let the MATLAB implementation of our algorithm be open source. One can learn about this implementation according to our paper.
+You can find this version in the **Initial-MATLAB-version branch**.
+
+**On 2021.10.17**, we will relase an optimized version of the MATLAB implementation. In this version, we will accelerate the computation by matrix organization
+in our codes. The code also supports a unified calculation of the Fourier-domain transfer entropy spectrum among multiple time series. This version is better suited 
+for engineering using. You can find this version in the **Optimized-MATLAB-version branch**. If one wants to learn about the theory underlying our algorithm, we suggest 
+that it will be much easier to read the code released on **2021.10.11**.
+
+**On 2021.10.18**, we will release the Python version of our algorithm. You can find this version in the **Pyton-version branch**. This version is equivalent to the
+the version in the **Optimized-MATLAB-version branch**.
+
+Below, we introduce the details of the **Initial-MATLAB-version branch**. Among these files, "MainFunctionforFDTES.m" 
 is the main function to run. "SymbolizationFunction.m", "SearchHistory.m", "FourierDomainTransferEntropySpectrum.m", "SignificanceTestFunction.m" 
 are ancillary functions to realize different steps of our approach. 
 
-Please note that there is a file "permutationTest.m" uploaded as a ancillary 
-function of "SignificanceTestFunction.m". It is not our original work, and we upload it only for the convenience of other users. The credits should 
-belong to Laurens R Krol via https://github.com/lrkrol/permutationTest. When you use our algorithm, please cite Laurens R Krol's work as well.
+Please note that there is a file **"permutationTest.m"** uploaded as a ancillary function of "SignificanceTestFunction.m". It is not our original work, 
+and we upload it only for the convenience of other users. **The credits of this code should belong to Laurens R Krol** via https://github.com/lrkrol/permutationTest. 
+**When you use our algorithm, please cite Laurens R Krol's work as well**.
 
 The function is given in following forms:
 [TransferEntropyM,XTSymbolMatrix,XFSymbolMatrix,YTSymbolMatrix,YFSymbolMatrix,f,varargout]=MainFunctionforFDTES(X,Y,TOrder,FOrder,TLag,Type,varargin)
@@ -63,7 +73,7 @@ namely \Lambda_{\mathsf{X}}\left(t,\omega\right) in the paper.
 **(3)** XFSymbolMatrix is the symbolization result of X along the frequency 
 line, namely \Theta_{\mathsf{X}}\left(t,\omega\right) in the paper.
 **(4)** YTSymbolMatrix is the symbolization result of Y along the time line,
-namely \Lambda_{\mathsf{Y}}\left(t,\omega\right) in the paper.
+namely \Theta_{\mathsf{Y}}\left(t,\omega\right) in the paper.
 
 **(5)** YFSymbolMatrix is the symbolization result of Y along the frequency 
 line, namely \Theta_{\mathsf{Y}}\left(t,\omega\right) in the paper.
