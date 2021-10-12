@@ -26,7 +26,7 @@ have to pre-process it;
 time-line during the symbolization; It should be a positive number and 
 never be larger than the length of time series.
 
-**(4)** TOrder is \theta in the paper. It determines the coarse-graining on
+**(4)** FOrder is \theta in the paper. It determines the coarse-graining on
 frequency-line during the symbolization; It should be a positive number  
 and never be larger than the length of frequency bands.
 
