@@ -21,7 +21,9 @@ and we upload it only for the convenience of other users. **The credits of this 
 **When you use our algorithm, please cite Laurens R Krol's work as well**.
 
 The function is given in following forms:
+```
 [TransferEntropyM,XTSymbolMatrix,XFSymbolMatrix,YTSymbolMatrix,YFSymbolMatrix,f,varargout]=MainFunctionforFDTES(X,Y,TOrder,FOrder,TLag,Type,varargin)
+```
 To use our code (both MATLAB and Python version), one may consider following tips:
 
 <big>**Input:**</big>
