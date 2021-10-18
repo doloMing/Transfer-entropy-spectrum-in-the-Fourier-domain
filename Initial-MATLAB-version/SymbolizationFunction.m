@@ -4,7 +4,6 @@ EndF=size(FX,1)-FOrder+1;
 TWindowMatrix=zeros(EndF,EndT,TOrder);
 FWindowMatrix=zeros(EndF,EndT,FOrder);
 for IDT=1:EndT
-%       disp(['Finish Symolization-',num2str(IDT/EndT*100),'%'])
     for IDF=1:EndF
         TW=[1+(IDT-1):TOrder+(IDT-1)];
         FW=[1+(IDF-1):FOrder+(IDF-1)];
