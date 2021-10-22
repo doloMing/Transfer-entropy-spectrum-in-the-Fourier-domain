@@ -121,8 +121,7 @@ of time series. In practice, (a) if you want to process a video or multiple time
 then you can try this code and j*k is the number of pixels or single
 time series; (b) however, you are not recommend to use this code if X
 contains too many time series, e.g., j*k>1000. This code can still run
-in such situations but it will cost unacceptable computer memory. In such a case, you 
-can try the simplified algorithm version;
+in such situations but it will cost unacceptable computer memory. 
 
 **(2)** Wavelet is the name of wavelet function. For instance, you can input
 Wavelet='sym4' for a near symmetric wavelet. In the document of function
